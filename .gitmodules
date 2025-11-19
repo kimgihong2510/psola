@@ -1,0 +1,3 @@
+[submodule "dep/pyin-pitch-detection"]
+	path = dep/pyin-pitch-detection
+	url = https://github.com/kimgihong2510/pyin-pitch-detection
