@@ -24,7 +24,9 @@ static Sola GetSola(double sampleRate, int numChannels, int frameSize, float min
 static pyin_pitch_detection::Pyin GetPyin(double sampleRate, int pyinFrameSize, float minFreq, float maxFreq) {
     using namespace pyin_pitch_detection;
     auto enhancedParams = Pyin::getDefaultEnhancedParams();
-    Pyin pyin(sampleRate, pyinFrameSize, minFreq, maxFreq, enhancedParams);
+    Pyin pyin;
+    pyin.prepareToPlay(
+        sampleRate, pyinFrameSize, minFreq, maxFreq, enhancedParams);
     return pyin;
 }
 } // namespace
