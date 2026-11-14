@@ -65,4 +65,4 @@ This will generate a pitch-shifted version of "input.wav" according to the "semi
 - Implement upsampling to prevent aliasing when pitch shifted up
 
 [PSOLA]: https://en.wikipedia.org/wiki/PSOLA
-[here](https://kimgihong2510.github.io/psola/demo/)
+[here]: https://kimgihong2510.github.io/psola/demo/
