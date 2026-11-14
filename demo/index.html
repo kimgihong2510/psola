@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PSOLA Audio Demo</title>
+
+  <style>
+    body {
+      max-width: 1400px;
+      margin: 40px auto;
+      padding: 0 24px;
+      font-family: sans-serif;
+    }
+
+    .demos {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    audio {
+      width: 100%;
+    }
+
+    .original {
+      max-width: 320px;
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>PSOLA Audio Demo</h1>
+
+  <div class="original">
+    <h2>Original</h2>
+    <audio controls preload="none" src="./input.wav"></audio>
+  </div>
+
+  <div class="demos">
+    <div>
+      <h2>+1 semitone</h2>
+      <audio controls preload="none" src="./output+1.wav"></audio>
+    </div>
+    <div>
+      <h2>+3 semitones</h2>
+      <audio controls preload="none" src="./output+3.wav"></audio>
+    </div>
+    <div>
+      <h2>+7 semitones</h2>
+      <audio controls preload="none" src="./output+7.wav"></audio>
+    </div>
+    <div>
+      <h2>+12 semitones</h2>
+      <audio controls preload="none" src="./output+12.wav"></audio>
+    </div>
+
+    <div>
+      <h2>-1 semitone</h2>
+      <audio controls preload="none" src="./output-1.wav"></audio>
+    </div>
+    <div>
+      <h2>-3 semitones</h2>
+      <audio controls preload="none" src="./output-3.wav"></audio>
+    </div>
+    <div>
+      <h2>-7 semitones</h2>
+      <audio controls preload="none" src="./output-7.wav"></audio>
+    </div>
+    <div>
+      <h2>-12 semitones</h2>
+      <audio controls preload="none" src="./output-12.wav"></audio>
+    </div>
+  </div>
+</body>
+</html>
